@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+}
+main{
+    display: flex;
+    height: 80vh;
+}
+header{
+    height: 10vh;
+    background-color: red;
+}
+.laranja{
+    width:30vw;
+    height: 80vh;
+    background-color: orange;
+}
+.marromescuro{
+    width: 70vw;
+    height: 80vh;
+    background-color: brown;
+}
+footer{
+    height: 10vh;
+    background-color: darkred;
+}
