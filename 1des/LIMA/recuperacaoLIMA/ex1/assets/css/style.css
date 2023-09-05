@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(65, 60, 60);
+}
+.cima{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 33.33%;
+}
+.meio{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    height: 33.33%;
+}
+.baixo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 33.33%;
+}
+.roxo{
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+}
+.verde{
+    background-color: green;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    width: 150px;
+    height: 150px;
+}
+
+.laranja{
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    width: 150px;
+    height: 150px;
+}
+.imagem{
+    background-image: url(../img/pug.jpeg);
+    background-size:cover;
+    display: flex;
+    width: 150px;
+    height: 150px;
+}
+p{
+    font-size: small;
+}
