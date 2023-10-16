@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajuste Salarial</title>
+</head>
+<body>
+    <header>
+        <h1>Reajuste Salarial</h1>
+    </header>
+    <main>
+        <form id="calcular">
+            <input type="text" name="nome" placeholder="Nome completo" required>
+            <input type="number" name="salario" placeholder="Salário" required>
+            <input type="number" name="percentual" placeholder="Percentual de Reajuste" required>
+            <input type="submit" value="Calcular">
+        </form>
+    </main>
+    <footer>
+        <p>O valor do reajuste é de <label id="reajuste"></label></p>
+        <p>O novo salário será de <label id="novoSalario"></label></p>
+    </footer>
+</body>
+<script>
+    const form = document.getElementById('calcular');
+    form.addEventListener('submit', obj =>{
+        obj.preventDefault();
+        let salario = parseFloat(form.salario.value);
+        let percentual  = form.percentual.value;
+        let reajuste = salario * percentual / 100;
+        let novoSalario = salario + reajuste;
+        document.getElementById('reajuste').innerHTML = reajuste.toFixed(2);
+        document.getElementById('novoSalario').innerHTML = novoSalario.toFixed(2);
+    });
+</script>
+</html>

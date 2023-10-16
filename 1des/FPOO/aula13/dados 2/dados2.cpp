@@ -1,10 +1,14 @@
 #include <stdio.h>
 #include <locale.h>
 #include <string.h>
-int main(){
-	setlocale(LC_ALL,"");
+
 	FILE *arquivo, *arq2;
 	int numero, soma = 0;
+	char nomeArquivo[] = "dados.txt";
+	char nomeResult[] = "resultado.txt";
+
+int main(){
+	setlocale(LC_ALL,"");
 	
 	arquivo = fopen ("dados.txt", "r");
 	
