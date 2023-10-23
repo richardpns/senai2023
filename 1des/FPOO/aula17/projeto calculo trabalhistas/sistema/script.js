@@ -5,6 +5,7 @@ function inss(salario){
       return salario * 9 / 100; 
     else if(salario < 3856.95)
       return salario * 12 / 100; 
+    
     else if(salario < 7507.49)
       return salario * 14 / 100;
     else
